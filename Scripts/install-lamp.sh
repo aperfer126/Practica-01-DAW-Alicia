@@ -8,6 +8,8 @@ set -e
  apt install apache2 -y
 # Instalamos PhP
  apt install php libapache2-mod-php php-mysql -y
+ #Copiamos el archivo de configuracion de apache
+ cp ../apache/000-default.conf /etc/apache2/sites-available/000-default.conf
 # Instalamos MySQL
  apt install mysql-server -y
 # Reiniciamos Apache
